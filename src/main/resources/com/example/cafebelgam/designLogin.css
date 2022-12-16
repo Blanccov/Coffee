@@ -31,7 +31,7 @@
 }
 
 .login-btn{
-    -fx-background-color: linear-gradient(to bottom right, #35529d, #2371d0);
+    -fx-background-color: linear-gradient(to top, #fdcbf1 0%, #fdcbf1 1%, #e6dee9 100%);
     -fx-background-radius: 8px;
     -fx-text-fill: #000000;
     -fx-font-size: 14px;
