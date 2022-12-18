@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <GridPane prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="526.60009765625" minWidth="10.0" prefWidth="195.20001220703125" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="969.5999649047851" minWidth="10.0" prefWidth="905.5999877929687" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints maxHeight="199.79999389648438" minHeight="2.1999924659728975" prefHeight="23.999996948242188" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="360.19999065399173" minHeight="10.0" prefHeight="69.00000508626302" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="634.3999938964844" minHeight="10.0" prefHeight="514.9999949137369" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" styleClass="bg-back" stylesheets="@designMainpanel.css" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <children>
+                  <AnchorPane layoutX="27.0" layoutY="14.0" prefHeight="482.0" prefWidth="844.0" styleClass="bg-white" stylesheets="@designMainpanel.css">
+                     <children>
+                        <TextField layoutX="14.0" layoutY="14.0" prefHeight="30.0" prefWidth="224.0" promptText="Search" styleClass="search" stylesheets="@designMainpanel.css" />
+                        <ImageView fitHeight="17.0" fitWidth="20.0" layoutX="23.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Images/magnifying-glass.png" />
+                           </image>
+                        </ImageView>
+                        <TableView layoutX="14.0" layoutY="60.0" prefHeight="406.0" prefWidth="814.0">
+                           <columns>
+                              <TableColumn prefWidth="235.9999885559082" text="Coupon Name" />
+                              <TableColumn prefWidth="139.20004272460938" text="Product type" />
+                              <TableColumn prefWidth="207.199951171875" text="Price" />
+                              <TableColumn prefWidth="234.4000244140625" text="Status" />
+                           </columns>
+                        </TableView>
+                        <Label layoutX="340.0" layoutY="10.0" prefHeight="23.0" prefWidth="115.0" text="Coupons">
+                           <font>
+                              <Font size="26.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" styleClass="bg-back" stylesheets="@designMainpanel.css" visible="false" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <children>
+                  <AnchorPane layoutX="603.0" layoutY="15.0" prefHeight="482.0" prefWidth="260.0" styleClass="bg-white" stylesheets="@designMainpanel.css">
+                     <children>
+                        <Label layoutX="4.0" layoutY="59.0" text="Product Name:" />
+                        <Label layoutX="21.0" layoutY="94.0" text="Quanity:" />
+                        <Button layoutX="151.0" layoutY="162.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="79.0" styleClass="menu-btn" stylesheets="@designMainpanel.css" text="Add" />
+                        <ComboBox layoutX="99.0" layoutY="55.0" prefWidth="150.0" promptText="Choose" />
+                        <Button layoutX="33.0" layoutY="367.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="198.0" styleClass="menu-btn" stylesheets="@designMainpanel.css" text="Remove" />
+                        <Button layoutX="33.0" layoutY="301.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="79.0" styleClass="menu-btn" stylesheets="@designMainpanel.css" text="Pay" />
+                        <Button layoutX="151.0" layoutY="301.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="79.0" styleClass="menu-btn" stylesheets="@designMainpanel.css" text="Receipt" />
+                        <Spinner layoutX="99.0" layoutY="90.0" />
+                        <Label layoutX="44.0" layoutY="232.0" text="Total:" />
+                        <Label layoutX="36.0" layoutY="256.0" text="Amount:" />
+                        <Label layoutX="83.0" layoutY="228.0" prefHeight="18.0" prefWidth="142.0" text="0.0zł">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                        </Label>
+                        <TextField layoutX="92.0" layoutY="252.0" prefHeight="26.0" prefWidth="115.0" promptText="0.0zł" />
+                        <Label layoutX="4.0" layoutY="125.0" text="Coupon Name:" />
+                        <TextField layoutX="100.0" layoutY="121.0" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="24.0" layoutY="15.0" prefHeight="482.0" prefWidth="538.0" styleClass="bg-white" stylesheets="@designMainpanel.css">
+                     <children>
+                        <TextField layoutX="14.0" layoutY="14.0" prefHeight="30.0" prefWidth="224.0" promptText="Search" styleClass="search" stylesheets="@designMainpanel.css" />
+                        <ImageView fitHeight="17.0" fitWidth="20.0" layoutX="23.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Images/magnifying-glass.png" />
+                           </image>
+                        </ImageView>
+                        <TableView layoutX="14.0" layoutY="60.0" prefHeight="405.0" prefWidth="509.0">
+                           <columns>
+                              <TableColumn prefWidth="144.800048828125" text="Product Name" />
+                              <TableColumn prefWidth="120.79991149902344" text="Type" />
+                              <TableColumn prefWidth="103.20010375976562" text="Price" />
+                              <TableColumn prefWidth="140.800048828125" text="Quantity" />
+                           </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" styleClass="bg-back" stylesheets="@designMainpanel.css" visible="false" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <children>
+                  <AnchorPane layoutX="38.0" layoutY="14.0" prefHeight="482.0" prefWidth="260.0" styleClass="bg-white" stylesheets="@designMainpanel.css">
+                     <children>
+                        <Label layoutX="52.0" layoutY="97.0" text="Table number:">
+                           <font>
+                              <Font name="System Bold" size="23.0" />
+                           </font>
+                        </Label>
+                        <Button layoutX="33.0" layoutY="241.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="198.0" styleClass="menu-btn" stylesheets="@designMainpanel.css" text="Reserve" />
+                        <Button layoutX="33.0" layoutY="301.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="79.0" styleClass="menu-btn" stylesheets="@designMainpanel.css" text="Clear" />
+                        <Button layoutX="151.0" layoutY="301.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="79.0" styleClass="menu-btn" stylesheets="@designMainpanel.css" text="Delete" />
+                        <ComboBox layoutX="55.0" layoutY="148.0" prefWidth="150.0" promptText="Choose" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="333.0" layoutY="14.0" prefHeight="482.0" prefWidth="538.0" styleClass="bg-white" stylesheets="@designMainpanel.css">
+                     <children>
+                        <TextField layoutX="14.0" layoutY="14.0" prefHeight="30.0" prefWidth="224.0" promptText="Search" styleClass="search" stylesheets="@designMainpanel.css" />
+                        <ImageView fitHeight="17.0" fitWidth="20.0" layoutX="23.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Images/magnifying-glass.png" />
+                           </image>
+                        </ImageView>
+                        <TableView layoutX="14.0" layoutY="60.0" prefHeight="405.0" prefWidth="509.0">
+                           <columns>
+                              <TableColumn prefWidth="150.4000244140625" text="Table number" />
+                              <TableColumn prefWidth="157.5999755859375" text="Type" />
+                              <TableColumn prefWidth="200.800048828125" text="Status" />
+                           </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="26.0" prefWidth="900.0" styleClass="bg-back" stylesheets="@designMainpanel.css" GridPane.columnIndex="1">
+               <children>
+                  <Button layoutX="851.0" layoutY="1.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="54.0" styleClass="close" stylesheets="@designMainpanel.css">
+                     <graphic>
+                        <ImageView fitHeight="12.0" fitWidth="12.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Images/close.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button layoutX="806.0" layoutY="1.0" minWidth="45.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="45.0" styleClass="minimize" stylesheets="@designMainpanel.css">
+                     <graphic>
+                        <ImageView fx:id="signUp_minimize" fitHeight="16.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Images/minimize-sign.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" styleClass="bg-back" stylesheets="@designMainpanel.css" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <children>
+                  <ImageView fitHeight="47.0" fitWidth="45.0" layoutX="828.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Images/user.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="746.0" layoutY="14.0" prefHeight="23.0" prefWidth="88.0" text="Good Morning,">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="746.0" layoutY="28.0" prefHeight="23.0" prefWidth="75.0" text="Username">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="36.0" layoutY="10.0" prefHeight="45.0" prefWidth="321.0">
+                     <font>
+                        <Font name="Arial Bold" size="30.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" styleClass="bg-back" stylesheets="@designMainpanel.css" visible="false" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <children>
+                  <AnchorPane layoutX="39.0" layoutY="14.0" prefHeight="482.0" prefWidth="832.0" styleClass="bg-white" stylesheets="@designMainpanel.css">
+                     <children>
+                        <TextField layoutX="14.0" layoutY="14.0" prefHeight="30.0" prefWidth="224.0" promptText="Search" styleClass="search" stylesheets="@designMainpanel.css" />
+                        <ImageView fitHeight="17.0" fitWidth="20.0" layoutX="23.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Images/magnifying-glass.png" />
+                           </image>
+                        </ImageView>
+                        <TableView layoutX="14.0" layoutY="60.0" prefHeight="406.0" prefWidth="792.0">
+                           <columns>
+                              <TableColumn prefWidth="144.800048828125" text="Product Name" />
+                              <TableColumn prefWidth="212.8000030517578" text="Type" />
+                              <TableColumn prefWidth="147.99993896484375" text="Price" />
+                              <TableColumn prefWidth="286.4000244140625" text="Status" />
+                           </columns>
+                        </TableView>
+                        <Label layoutX="358.0" layoutY="6.0" prefHeight="38.0" prefWidth="115.0" text="Menu">
+                           <font>
+                              <Font name="System Bold" size="31.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="600.0" prefWidth="179.0" styleClass="nav-form" stylesheets="@designMainpanel.css" GridPane.rowSpan="3">
+               <children>
+                  <ImageView fitHeight="70.0" fitWidth="79.0" layoutX="14.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Images/restaurant-building.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="84.0" layoutY="58.0" text="Cafe Lusia">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="56.0" layoutY="163.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="159.0" styleClass="nav-btn" stylesheets="@designMainpanel.css" text="Reservations">
+                     <graphic>
+                        <ImageView fitHeight="17.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Images/booking.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button layoutX="56.0" layoutY="201.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="159.0" styleClass="nav-btn" stylesheets="@designMainpanel.css" text="Orders">
+                     <graphic>
+                        <ImageView fitHeight="19.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Images/clipboard.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button layoutX="56.0" layoutY="239.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="159.0" styleClass="nav-btn" stylesheets="@designMainpanel.css" text="Coupons">
+                     <graphic>
+                        <ImageView fitHeight="19.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Images/coupon.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button layoutX="56.0" layoutY="537.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="159.0" styleClass="nav-btn" stylesheets="@designMainpanel.css" text="Sign out">
+                     <graphic>
+                        <ImageView fitHeight="19.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Images/exit.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button layoutX="56.0" layoutY="125.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="159.0" styleClass="nav-btn" stylesheets="@designMainpanel.css" text="Menu">
+                     <graphic>
+                        <ImageView fitHeight="17.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Images/menu.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>

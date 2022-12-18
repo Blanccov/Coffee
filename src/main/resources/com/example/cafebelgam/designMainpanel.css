@@ -64,3 +64,23 @@
     -fx-font-size: 13px;
     -fx-padding: 0px 0px 0px 28px;
 }
+
+.search:focused{
+    -fx-background-color: #fff;
+    -fx-border-radius: 6px;
+}
+
+.table-view{
+    -fx-background-radius: 8px;
+    -fx-border-width: 2px;
+    -fx-padding: 0px;
+}
+
+.table-view .table-column{
+    -fx-alignment: CENTER;
+}
+
+.table-view .column-header{
+    -fx-background-color: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+    -fx-size: 35px;
+}
